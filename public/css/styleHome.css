@@ -1,0 +1,110 @@
+/* Главная секция */
+.hero-section {
+    display: flex;
+    align-items: center; /* Центрируем содержимое */
+    justify-content: center; /* Выравниваем по центру */
+    padding-top: 100px; /* Отступ сверху, чтобы текст не прилипал к шапке */
+
+}
+
+/* Контейнер с текстом в главной секции */
+.hero-content {
+
+    padding: 30px; /* Внутренний отступ */
+    border-radius: 10px; /* Закругление углов */
+    display: inline-block;
+}
+
+/* Заголовок в главной секции */
+.hero-title {
+    font-size: 3rem; /* Размер шрифта */
+    font-weight: bold; /* Жирный текст */
+    color: black; /* Черный цвет */
+}
+
+/* Подзаголовок */
+.hero-subtitle {
+    font-size: 2rem;
+    color: black; /* Серый цвет */
+}
+
+/* Описание */
+.hero-description {
+    font-size: 1.7rem;
+    color: black;
+}
+
+/* Кнопка в главной секции */
+.hero-btn {
+    color: orangered;
+    margin-top: 15px; /* Отступ сверху */
+    padding: 10px 20px; /* Размер кнопки */
+}
+
+/* Секция с турами */
+.tours-section {
+    padding: 50px 0; /* Отступы сверху и снизу */
+
+}
+
+/* Заголовки секций */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px; /* Отступ снизу */
+    margin-right: 70px;
+}
+
+/* Карточки туров */
+.tour-card {
+    background: cornsilk; /* Белый фон */
+    padding: 20px;
+    border-radius: 10px; /* Закругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    transition: transform 0.3s ease-in-out; /* Анимация */
+}
+
+.tour-card:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+/* Картинки туров */
+.tour-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Названия туров */
+.tour-card h3 {
+    margin-top: 15px;
+    color: black;
+}
+
+/* Текст туров */
+.tour-card p {
+    color: black;
+}
+
+/* Кнопки в карточках */
+.tour-card .btn {
+    margin-top: 10px;
+}
+
+/* Секция бронирования */
+.hotels-section {
+    padding: 50px 0;
+}
+
+/* Подзаголовок в секции бронирования */
+.section-subtitle {
+    font-size: 1.3rem;
+    color: black;
+}
+
+/* Кнопка бронирования */
+.hotels-section .btn {
+    color: orangered;
+    margin-top: 20px;
+    padding: 10px 20px;
+}

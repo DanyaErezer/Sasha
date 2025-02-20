@@ -1,0 +1,30 @@
+/* Стиль для галереи */
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    background: none !important; /* Убираем фон */
+}
+
+.carousel-item img {
+    display: block;
+    margin: auto; /* Центрируем */
+    height: 850px;
+    width: auto; /* Чтобы изображение сохраняло пропорции */
+    max-width: 100%; /* Не выходило за границы */
+    object-fit: contain; /* Вписывает фото без обрезки */
+}
+
+.carousel-control-next {
+    width: 10%; /* Уменьшаем ширину кликабельной зоны */
+    right:20%;
+}
+.carousel-control-prev {
+    width: 10%; /* Уменьшаем ширину кликабельной зоны */
+    left: 20%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 60px;
+    height: 60px; /* Делаем иконки меньше */
+}

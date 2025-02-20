@@ -1,5 +1,5 @@
 body {
-    background-image: url('/images/Фон 2.jpg'); /* Фон */
+    background-image: url('/images/Фон 3.jpg'); /* Фон */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,16 +8,25 @@ body {
     margin: 0;
     padding: 0;
 }
+.active {
+    color: #fff;
+    background-color: silver;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 
 .header {
     padding: 15px 0;
-    position: relative;
-    top: 20px;
 }
 
 .container {
+    display: flex;
+    justify-content: space-between; /* Раздвигаем элементы */
+    align-items: center; /* Выравниваем по вертикали */
     max-width: 100%;
-    padding: 0 50px; /* Отступы от краев */
+
 }
 
 .site-title {
@@ -26,7 +35,7 @@ body {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 2px;
-
+    margin: 0;
 }
 
 .site-title:hover {
@@ -62,10 +71,8 @@ body {
 
 .social-icons {
     display: flex; /* Flexbox для выравнивания иконок */
-    justify-content: flex-end;
     gap: 10px; /* Расстояние между иконками */
     align-items: center; /* Центрируем по вертикали */
-    margin-right: 40px
 }
 
 .social-icons img {
@@ -77,4 +84,5 @@ body {
 .social-icons img:hover {
     transform: scale(1.2);
 }
+
 
