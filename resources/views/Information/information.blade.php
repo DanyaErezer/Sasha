@@ -6,8 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
-<h1>ТЫ ПИДОР!</h1>
-<body>
 
+<body>
+@foreach($posts as $post)
+    <div class="post">
+        <h2>{{ $post->post_title }}</h2>
+        <p>{!! ($post->post_content) !!}</p>
+
+    </div>
+@endforeach
 </body>
 </html>

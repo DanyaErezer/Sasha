@@ -1,0 +1,64 @@
+/* styles.css */
+
+/* Общие стили для тела страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Светлый фон */
+
+}
+
+/* Стили для контейнера с карточками */
+.row {
+    margin: 0 15px; /* Добавляем отступы с лева и справа */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+/* Стили для каждой карточки */
+.card {
+    width: 100%;
+    border-radius: 10px; /* Закругление углов */
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out; /* Добавляем плавную анимацию */
+}
+
+/* Анимация увеличения карточки при наведении */
+.card:hover {
+    transform: scale(1.05); /* Карточка немного увеличивается */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Легкая тень */
+}
+
+/* Изображения в карточках */
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* Для кнопок внутри карточек */
+.btn-group {
+    margin-top: 10px;
+}
+
+/* Стили для текста даты */
+.text-body-secondary {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Отступы для карточек на разных экранах */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        margin: 10px;
+    }
+}

@@ -28,32 +28,22 @@
 <!-- Блок с турами -->
 <section id="tours" class="tours-section">
     <div class="container text-center">
-        <h2 class="section-title">НАШИ ТУРЫ</h2>
         <div class="row">
-            <div class="col-md-4">
-                <div class="tour-card">
-                    <img src="images/Дагестан.jpg" alt="Май">
-                    <h3></h3>
-                    <p>Необычные маршруты, интересные места.</p>
-                    <a href="/travel" class="btn btn-outline-dark">Подробнее</a>
+            @foreach(['home1', 'home2', 'home3'] as $category)
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        @if(isset($cards[$category]) && count($cards[$category]) > 0)
+                            @foreach($cards[$category] as $post)
+                                <h2>{{ $post->post_title }}</h2>
+                                <p>{!! $post->post_content !!}</p>
+                            @endforeach
+                        @else
+                            <p>Нет записей</p>
+                        @endif
+                        <a href="/travel" class="btn btn-outline-dark">Подробнее</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="tour-card">
-                    <img src="images/Фон 2.jpg" alt="Июнь">
-                    <h3>Тур в Жопу</h3>
-                    <p>Морские побережья и живописные виды.</p>
-                    <a href="/travel" class="btn btn-outline-dark">Подробнее</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="tour-card">
-                    <img src="images/Фон 1.jpg" alt="Июль">
-                    <h3>Тур в Гейропу</h3>
-                    <p>Европейские города и культура.</p>
-                    <a href="/travel" class="btn btn-outline-dark">Подробнее</a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>

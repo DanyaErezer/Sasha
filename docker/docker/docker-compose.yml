@@ -1,20 +1,4 @@
 services:
-    mysql:
-        image: mysql:8
-        container_name: mysql_container
-        restart: always
-        environment:
-            MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: travel-bd
-            MYSQL_USER: Danya
-            MYSQL_PASSWORD: "5555"
-        ports:
-            - "3306:3306"
-        volumes:
-            - mysql_data:/var/lib/mysql
-        networks:
-            - laravel_network
-
     app:
         build:
             context: ..
@@ -24,43 +8,24 @@ services:
         working_dir: /var/www/html
         volumes:
             - D:/PHP_Project/Trevel/test:/var/www/html
-        depends_on:
-            - mysql
-            - wordpress
         entrypoint: ["/bin/sh", "-c", "sleep 30 && php-fpm"]
         networks:
             - laravel_network
 
-    wordpress:
-        image: wordpress:fpm
-        container_name: wordpress_container
-        restart: always
-        environment:
-            WORDPRESS_DB_HOST: mysql
-            WORDPRESS_DB_USER: Danya
-            WORDPRESS_DB_PASSWORD: "5555"
-            WORDPRESS_DB_NAME: travel-bd
-        volumes:
-            - D:/PHP_Project/Trevel/test/wordpress:/var/www/html
-        depends_on:
-            - mysql
-        networks:
-            - laravel_network
 
     nginx:
         image: nginx:latest
         container_name: nginx_container
         restart: always
         ports:
-            - "82:82"
+            - "80:80"
+
 
 
         volumes:
             - D:/PHP_Project/Trevel/test/public:/var/www/html/public
-            - D:/PHP_Project/Trevel/test/wordpress:/var/www/html/wordpress
             - D:/PHP_Project/Trevel/test/docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
         depends_on:
-            - wordpress
             - app
         networks:
             - laravel_network
