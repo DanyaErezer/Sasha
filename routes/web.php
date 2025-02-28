@@ -17,13 +17,10 @@ Route::get('/contact', [MainControllers::class, "contact"])->name('contact');
 
 Route::get('/travel', [MainControllers::class, "travel"])->name('travel');
 
+Route::get('/travel', [WPControllers::class, "WP_travel"])->name('travel');
+
 Route::get('/photo', [MainControllers::class, "photo"])->name('photo');
 
-//Route::get('.Information/information', [WPControllers::class, "info"]);
-
-//Route::get('.Information/information2', [WPControllers::class, "info2"]);
-
-//Route::get('.Information/information3', [WPControllers::class, "info3"]);
 
 Route::get('/info/{category}', [WPControllers::class, 'info']);
 

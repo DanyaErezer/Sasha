@@ -10,7 +10,7 @@
 
 <div class="container">
     <div class="image">
-        <img src="../images/info/Горы 2.jpg" alt="Экскурсия">
+        <img src="../images/info/Горы 4.jpg" alt="Экскурсия">
     </div>
     <div class="text">
         @foreach($posts as $post)

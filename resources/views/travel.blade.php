@@ -19,62 +19,78 @@
         <div class="card shadow-sm">
             <img src="images/Дагестан.jpg" class="card-img-top" alt="Описание">
             <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                @foreach([ 'travel1' ] as $category)
+                @foreach($cards[$category] as $post)
+                    <h2>{{ $post->post_title }}</h2>
+                    <p>{!! $post->post_content !!}</p>
+                @endforeach
+                @endforeach
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <a href="info/info1">
+                        <a href="info/info1" target="_blank" rel="noopener noreferrer">
                             <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
                         </a>
                     </div>
-                    <small class="text-body-secondary">Май</small>
                 </div>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="images/Дагестан.jpg" class="card-img-top" alt="Описание">
             <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                @foreach([ 'travel2' ] as $category)
+                    @foreach($cards[$category] as $post)
+                        <h2>{{ $post->post_title }}</h2>
+                        <p>{!! $post->post_content !!}</p>
+                    @endforeach
+                @endforeach
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <a href="info/info2">
+                        <a href="info/info2" target="_blank" rel="noopener noreferrer">
                             <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
                         </a>
                     </div>
-                    <small class="text-body-secondary">Июнь</small>
                 </div>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="images/Дагестан.jpg" class="card-img-top" alt="Описание">
             <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                @foreach([ 'travel3' ] as $category)
+                    @foreach($cards[$category] as $post)
+                        <h2>{{ $post->post_title }}</h2>
+                        <p>{!! $post->post_content !!}</p>
+                    @endforeach
+                @endforeach
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <a href="info/info3">
+                        <a href="info/info3" target="_blank" rel="noopener noreferrer">
                             <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
                         </a>
                     </div>
-                    <small class="text-body-secondary">Июль</small>
                 </div>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="images/Дагестан.jpg" class="card-img-top" alt="Описание">
             <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                @foreach([ 'travel4' ] as $category)
+                    @foreach($cards[$category] as $post)
+                        <h2>{{ $post->post_title }}</h2>
+                        <p>{!! $post->post_content !!}</p>
+                    @endforeach
+                @endforeach
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <a href="info/info4">
+                        <a href="info/info4" target="_blank" rel="noopener noreferrer">
                             <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
                         </a>
                     </div>
-                    <small class="text-body-secondary">Август</small>
                 </div>
             </div>
         </div>
