@@ -13,8 +13,6 @@ Route::get('/', [WPControllers::class, "WP_home"])->name('home');
 Route::get('/about', [MainControllers::class, "about"])->name('about');
 
 
-Route::get('/contact', [MainControllers::class, "contact"])->name('contact');
-
 Route::get('/travel', [MainControllers::class, "travel"])->name('travel');
 
 Route::get('/travel', [WPControllers::class, "WP_travel"])->name('travel');

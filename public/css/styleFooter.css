@@ -1,0 +1,51 @@
+/* Стили для футера */
+footer {
+    background-color: #333; /* Темный фон */
+    color: white; /* Белый текст */
+    padding: 20px 0; /* Отступы сверху и снизу */
+    margin-top: 100px; /* Отступ сверху для отделения от основного контента */
+}
+
+/* Стили для секции контактов */
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    height: auto; /* Измените на auto, чтобы футер не был слишком высоким */
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Заголовок и подзаголовок */
+.contact-title {
+    color: white; /* Белый текст */
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.contact-subtitle {
+    color: white; /* Белый текст */
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+/* Контактная информация */
+.contact-info p {
+    color: white; /* Белый текст */
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white; /* Белый текст */
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #ccc; /* Цвет при наведении */
+}
+
+

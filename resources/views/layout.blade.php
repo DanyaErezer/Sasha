@@ -11,8 +11,7 @@
 </head>
 <body>
 
-</body>
-</html>
+
 
 
 
@@ -25,7 +24,6 @@
                 <li><a href="{{ route('travel') }}" class="{{ Route::is('travel') ? 'active' : '' }}">Путешествия</a></li>
                 <li><a href="{{ route('photo') }}" class="{{ Route::is('photo') ? 'active' : '' }}">Фотографии</a></li>
                 <li><a href="{{ route('about') }}" class="{{ Route::is('about') ? 'active' : '' }}">О нас</a></li>
-                <li><a href="{{ route('contact') }}" class="{{ Route::is('contact') ? 'active' : '' }}">Контакты</a></li>
             </ul>
         </nav>
         <div class="social-icons">
@@ -43,4 +41,10 @@
 </header>
 
 
+
 @yield('main_content')
+
+
+@include('footer')
+</body>
+</html>

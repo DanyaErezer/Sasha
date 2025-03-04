@@ -17,7 +17,7 @@
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
     <div class="col">
         <div class="card shadow-sm">
-            <img src="images/Дагестан.jpg" class="card-img-top" alt="Описание">
+            <img src="../images/travel/rock1.jpg" class="card-img-top" alt="Описание">
             <div class="card-body">
                 @foreach([ 'travel1' ] as $category)
                 @foreach($cards[$category] as $post)
@@ -37,7 +37,7 @@
     </div>
     <div class="col">
         <div class="card shadow-sm">
-            <img src="images/Дагестан.jpg" class="card-img-top" alt="Описание">
+            <img src="../images/travel/rock2.jpg" class="card-img-top" alt="Описание">
             <div class="card-body">
                 @foreach([ 'travel2' ] as $category)
                     @foreach($cards[$category] as $post)
@@ -57,7 +57,7 @@
     </div>
     <div class="col">
         <div class="card shadow-sm">
-            <img src="images/Дагестан.jpg" class="card-img-top" alt="Описание">
+            <img src="../images/travel/rock3.jpg" class="card-img-top" alt="Описание">
             <div class="card-body">
                 @foreach([ 'travel3' ] as $category)
                     @foreach($cards[$category] as $post)
@@ -77,7 +77,7 @@
     </div>
     <div class="col">
         <div class="card shadow-sm">
-            <img src="images/Дагестан.jpg" class="card-img-top" alt="Описание">
+            <img src="../images/travel/rock4.jpg" class="card-img-top" alt="Описание">
             <div class="card-body">
                 @foreach([ 'travel4' ] as $category)
                     @foreach($cards[$category] as $post)

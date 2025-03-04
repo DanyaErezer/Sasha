@@ -13,7 +13,7 @@
 
 /* Подпись под фото */
 .founder-text {
-    color: black;
+    color: white;
     margin-top: 10px;
     font-size: 18px;
     text-align: center;
@@ -23,7 +23,7 @@
 
 /* Заголовок "О проекте" */
 .about-title {
-    color: darkblue;
+    color: orangered;
     font-size: 36px;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -32,7 +32,7 @@
 
 /* Основной текст о проекте */
 .about-text {
-    color: black;
+    color: white;
     font-size: 24px;
     line-height: 1.6;
     letter-spacing: 1px;

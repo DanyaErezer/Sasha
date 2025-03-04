@@ -18,9 +18,9 @@
 <!-- Главная секция -->
 <section class="hero-section">
     <div class="container text-center hero-content">
-        <h1 class="hero-title">Если ты хочешь</h1>
-        <h2 class="hero-subtitle">Быстро взял тур у Сани</h2>
-        <h3 class="hero-description">Или тебя посадят на бутылку!</h3>
+        <h1 class="hero-title">Твой лучший отпуск в горах Дагестана</h1>
+        <h2 class="hero-subtitle">Спланируй поездку с опытными гидами</h2>
+        <h3 class="hero-description">Здесь каждый поворот — это новая история!</h3>
         <a href="/travel" class="btn btn-dark hero-btn">ХОЧУ С ВАМИ</a>
     </div>
 </section>
@@ -49,13 +49,7 @@
 </section>
 
 
-<section id="hotels" class="hotels-section">
-    <div class="container text-center">
-        <h2 class="section-title">Свяжись со мной</h2>
-        <p class="section-subtitle">Я помогу организовать отдых твоей мечты</p>
-        <a href="/contact" class="btn btn-dark">Связь!!</a>
-    </div>
-</section>
+
 
 </body>
 </html>
