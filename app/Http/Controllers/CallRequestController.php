@@ -36,7 +36,7 @@ class CallRequestController extends Controller
 
 
         Http::post("https://api.telegram.org/bot7933156134:AAGIi9VSq_PG3lr8zfIMUhvRsDNbmhK7YWE/sendMessage", [
-            'chat_id' => '509595351',
+            'chat_id' => '1058561054',
             'text' => $message,
         ]);
 
