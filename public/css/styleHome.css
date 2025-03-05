@@ -4,12 +4,10 @@
     align-items: center; /* Центрируем содержимое */
     justify-content: center; /* Выравниваем по центру */
     padding-top: 100px; /* Отступ сверху, чтобы текст не прилипал к шапке */
-
 }
 
 /* Контейнер с текстом в главной секции */
 .hero-content {
-
     padding: 30px; /* Внутренний отступ */
     border-radius: 10px; /* Закругление углов */
     display: inline-block;
@@ -24,14 +22,14 @@
 
 /* Подзаголовок */
 .hero-subtitle {
-    font-size: 2rem;
-    color: black; /* Серый цвет */
+    font-size: 2rem; /* Размер шрифта подзаголовка */
+    color: black; /* Черный цвет */
 }
 
 /* Описание */
 .hero-description {
-    font-size: 1.7rem;
-    color: black;
+    font-size: 1.7rem; /* Размер шрифта описания */
+    color: black; /* Черный цвет */
 }
 
 /* Кнопка в главной секции */
@@ -44,17 +42,13 @@
 /* Секция с турами */
 .tours-section {
     padding: 50px 0; /* Отступы сверху и снизу */
-
 }
-
-/* Заголовки секций */
-
 
 /* Карточки туров */
 .tour-card {
-    background: cornsilk; /* Белый фон */
+    background: cornsilk; /* Фон карточки */
     padding: 20px;
-    border-radius: 10px; /* Закругление углов */
+    border-radius: 10px; /* Закругление углов карточки */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
     transition: transform 0.3s ease-in-out; /* Анимация */
 }
@@ -66,39 +60,66 @@
 /* Картинки туров */
 .tour-card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 10px; /* Закругление углов картинок */
 }
 
-/* Названия туров */
-.tour-card h3 {
-    margin-top: 15px;
-    color: black;
+/* Заголовки карточек */
+.tour-card h2 {
+    margin-top: 15px; /* Отступ сверху заголовка карточки */
+    color: black; /* Черный цвет */
 }
 
-/* Текст туров */
+/* Текст карточек */
 .tour-card p {
-    color: black;
+    color: black; /* Черный цвет текста */
 }
 
 /* Кнопки в карточках */
 .tour-card .btn {
-    margin-top: 10px;
+    margin-top: 10px; /* Отступ сверху для кнопок */
 }
 
-/* Секция бронирования */
-.hotels-section {
-    padding: 50px 0;
+/* Секция формы заказа звонка */
+.contact-section {
+    padding: 80px 0; /* Отступы сверху и снизу для секции формы */
+
 }
 
-/* Подзаголовок в секции бронирования */
-.section-subtitle {
-    font-size: 1.3rem;
-    color: black;
+/* Стили для формы заказа звонка */
+.form-container {
+    background-color: cornsilk; /* Белый фон для формы */
+    padding: 30px; /* Внутренний отступ */
+    border-radius: 10px; /* Закругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    max-width: 900px; /* Максимальная ширина формы */
+    width: 100%; /* Ширина формы будет 100%, но не больше max-width */
+    margin: 0 auto; /* Центрируем контейнер */
 }
 
-/* Кнопка бронирования */
-.hotels-section .btn {
-    color: orangered;
-    margin-top: 20px;
-    padding: 10px 20px;
+.form-container h2 {
+    margin-bottom: 20px; /* Отступ снизу заголовка формы */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Отступ между группами полей */
+}
+
+.form-control {
+    border-radius: 5px; /* Закругление углов полей ввода */
+    height: 45px; /* Высота полей ввода */
+}
+
+.btn {
+    padding: 10px; /* Размер кнопки */
+}
+
+/* Кнопка для формы */
+.form-container .btn {
+    background-color: orangered; /* Цвет фона для кнопки формы */
+    color: white; /* Цвет текста кнопки формы */
+    width: 100%; /* Ширина кнопки 100% */
+}
+
+.alert {
+    margin-top: 10px; /* Отступ сверху для сообщений */
 }
