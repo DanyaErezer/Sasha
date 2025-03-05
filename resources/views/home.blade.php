@@ -53,7 +53,7 @@
         <div class="form-container">
             <form action="{{ route('call') }}" method="POST">
                 @csrf
-                <h2 class="text-center">Заказать звонок</h2>
+                <h2 class="text-center">Закажи звонок!</h2>
                 <div class="form-group">
                     <label for="name">Имя:</label>
                     <input type="text" id="name" name="name" class="form-control" required>

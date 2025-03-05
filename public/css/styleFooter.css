@@ -2,7 +2,6 @@
 footer {
     background-color: #333; /* Темный фон */
     color: white; /* Белый текст */
-    padding: 5px 0; /* Отступы сверху и снизу */
     margin-top: 100px; /* Отступ сверху для отделения от основного контента */
 }
 
@@ -11,7 +10,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     height: auto; /* Измените на auto, чтобы футер не был слишком высоким */
     text-align: center;
     border-radius: 10px;
