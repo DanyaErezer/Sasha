@@ -28,7 +28,8 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Изменено на flex-start */
+    overflow: auto; /* Добавлено для прокрутки текста */
 }
 
 .text h1 {
@@ -71,6 +72,7 @@ body {
         padding: 20px; /* Уменьшаем отступы для мобильных */
         height: 100vh; /* Задаем 100% высоты экрана */
         justify-content: flex-start; /* Выравниваем текст сверху */
+        overflow: auto; /* Добавлено для прокрутки текста */
     }
 }
 
