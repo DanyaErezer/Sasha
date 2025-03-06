@@ -47,7 +47,7 @@ body {
 
 /* При открытии бургера сдвигаем заголовок */
 .site-title.burger-open {
-    margin-top: 50px;
+    margin-top: 50px; /* Сдвиг вниз */
 }
 
 /* Иконка бургера */
@@ -80,6 +80,10 @@ body {
     margin: 0;
 }
 
+.nav-menu ul li {
+    text-align: center; /* Центрирование текста */
+}
+
 .nav-menu ul li a {
     text-decoration: none;
     font-size: 28px;
@@ -108,7 +112,6 @@ body {
         flex-direction: column; /* Вертикальное расположение пунктов */
         align-items: center;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.9); /* Лёгкий фон */
         position: absolute;
         top: 70px;
         left: 0;
@@ -121,13 +124,10 @@ body {
     }
 
     .nav-menu.active {
-        display: flex;
-        align-items: center; /* Центрируем */
-        justify-content: center;
+        display: flex; /* Показываем меню при активации */
     }
 
     .nav-menu ul {
-        display: flex;
         flex-direction: column; /* Вертикальное расположение кнопок */
         gap: 15px;
         padding: 0;
