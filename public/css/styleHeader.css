@@ -4,10 +4,17 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    -webkit-overflow-scrolling: touch; /* Для лучшей прокрутки в Safari */
+}
+
+/* Переопределение фиксированного фона для Safari */
+@supports (-webkit-touch-callout: none) {
+    body {
+        background-attachment: scroll;
+    }
 }
 
 .active {
@@ -27,6 +34,7 @@ body {
     justify-content: space-between; /* Раздвигаем элементы */
     align-items: center; /* Выравниваем по вертикали */
     max-width: 100%;
+    box-sizing: border-box;
 }
 
 .site-title {
@@ -123,5 +131,28 @@ body {
 
     .nav-menu ul li a {
         font-size: 20px; /* Уменьшаем размер шрифта для ссылок */
+    }
+}
+
+/* Дополнительные стили для улучшения адаптивности */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Отключаем горизонтальный скролл */
+    position: relative;
+}
+
+.container {
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 15px; /* Добавляем отступы для мобильных устройств */
     }
 }
