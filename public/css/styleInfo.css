@@ -4,13 +4,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на устройствах Apple */
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    box-sizing: border-box; /* Обеспечиваем правильное расчётное поведение всех элементов */
 }
 
+/* Контейнер */
 .container {
     display: flex;
     height: 100vh; /* Высота на всю страницу */
+    width: 100%;
+    box-sizing: border-box; /* Все элементы внутри контейнера учтены с учетом отступов */
 }
 
+/* Блок с изображением */
 .image {
     width: 40%;
     background-color: #ddd;
@@ -22,6 +29,7 @@ body {
     object-fit: cover;
 }
 
+/* Текстовый блок */
 .text {
     width: 60%;
     padding: 40px;
@@ -29,19 +37,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Выравниваем текст сверху */
-    overflow: auto; /* Добавлено для прокрутки текста */
+    overflow: auto; /* Прокрутка текста */
+    box-sizing: border-box; /* Обеспечиваем правильный расчет размеров */
 }
 
+/* Заголовок */
 .text h1 {
     font-size: 32px;
     margin-bottom: 20px;
 }
 
+/* Абзац */
 .text p {
     font-size: 18px;
     line-height: 1.6;
 }
 
+/* Кнопка */
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -61,6 +73,7 @@ body {
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Вертикальное расположение содержимого */
+        width: 100%; /* Контейнер на всю ширину экрана */
     }
 
     .image {
@@ -68,14 +81,22 @@ body {
     }
 
     .text {
-        width: 100% !important; /* Изменяем ширину на 100% для мобильных */
-        padding: 20px; /* Уменьшаем отступы для мобильных */
-        height: auto !important; /* Задаем автоматическую высоту */
+        width: 100% !important; /* Ширина 100% на мобильных */
+        padding: 20px; /* Уменьшаем отступы */
+        height: auto !important; /* Автоматическая высота */
         justify-content: flex-start !important; /* Выравниваем текст сверху */
-        overflow: auto !important; /* Добавлено для прокрутки текста */
+        overflow: auto !important; /* Прокрутка текста */
     }
 }
 
+/* Для Safari и мобильных устройств */
+@supports (-webkit-touch-callout: none) {
+    body {
+        -webkit-overflow-scrolling: touch; /* Плавная прокрутка на iOS */
+    }
+}
+
+/* Медиа-запрос для маленьких экранов */
 @media (max-width: 480px) {
     .text h1 {
         font-size: 24px; /* Уменьшаем размер заголовка */
@@ -86,6 +107,18 @@ body {
     }
 
     .btn {
-        padding: 8px 16px; /* Уменьшаем размер кнопки для мобильных */
+        padding: 8px 16px; /* Уменьшаем размер кнопки */
     }
+}
+
+/* Общие исправления для адаптивности */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Отключаем горизонтальный скролл */
+    position: relative;
+}
+
+.container {
+    box-sizing: border-box;
 }
