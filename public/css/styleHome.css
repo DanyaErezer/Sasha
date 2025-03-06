@@ -82,7 +82,6 @@
 /* Секция формы заказа звонка */
 .contact-section {
     padding: 80px 0; /* Отступы сверху и снизу для секции формы */
-
 }
 
 /* Стили для формы заказа звонка */
@@ -122,4 +121,63 @@
 
 .alert {
     margin-top: 10px; /* Отступ сверху для сообщений */
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 50px; /* Уменьшаем отступ сверху на мобильных устройствах */
+        flex-direction: column; /* Вертикальное расположение содержимого */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .hero-content {
+        padding: 20px; /* Уменьшаем внутренний отступ */
+    }
+
+    .hero-title {
+        font-size: 2.5rem; /* Уменьшаем размер заголовка */
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem; /* Уменьшаем размер подзаголовка */
+    }
+
+    .hero-description {
+        font-size: 1.3rem; /* Уменьшаем размер описания */
+    }
+
+    .tours-section {
+        padding: 30px 0; /* Уменьшаем отступы для секции с турами */
+    }
+
+    .tour-card {
+        margin: 10px; /* Добавляем отступы между карточками */
+    }
+
+    .form-container {
+        padding: 20px; /* Уменьшаем внутренний отступ формы */
+    }
+
+    .form-control {
+        height: 40px; /* Уменьшаем высоту полей ввода */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem; /* Еще больше уменьшаем размер заголовка */
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem; /* Уменьшаем размер подзаголовка */
+    }
+
+    .hero-description {
+        font-size: 1rem; /* Уменьшаем размер описания */
+    }
+
+    .form-container h2 {
+        font-size: 1.5rem; /* Уменьшаем размер заголовка формы */
+    }
 }

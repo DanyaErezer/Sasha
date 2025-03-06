@@ -48,4 +48,38 @@ footer {
     color: #ccc; /* Цвет при наведении */
 }
 
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        padding: 20px; /* Увеличиваем отступы для мобильных */
+    }
 
+    .contact-title {
+        font-size: 28px; /* Уменьшаем размер заголовка */
+    }
+
+    .contact-subtitle {
+        font-size: 18px; /* Уменьшаем размер подзаголовка */
+        margin-left: 0; /* Убираем отступ слева */
+        margin-top: 10px; /* Добавляем отступ сверху */
+    }
+
+    .contact-info p {
+        font-size: 16px; /* Уменьшаем размер текста */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 24px; /* Еще больше уменьшаем размер заголовка */
+    }
+
+    .contact-subtitle {
+        font-size: 16px; /* Уменьшаем размер подзаголовка */
+    }
+
+    .contact-info p {
+        font-size: 14px; /* Уменьшаем размер текста */
+    }
+}
