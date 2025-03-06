@@ -96,9 +96,14 @@ body {
         font-size: 2rem; /* Уменьшаем размер заголовка */
     }
 
+    .nav-menu {
+        justify-content: center; /* Центрируем меню */
+    }
+
     .nav-menu ul {
         flex-direction: column; /* Вертикальное расположение меню */
         gap: 15px; /* Уменьшаем расстояние между кнопками */
+        align-items: center; /* Центрируем кнопки */
     }
 
     .nav-menu ul li a {
