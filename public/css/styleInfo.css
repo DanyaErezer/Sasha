@@ -28,7 +28,7 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Изменено на flex-start */
+    justify-content: flex-start; /* Выравниваем текст сверху */
     overflow: auto; /* Добавлено для прокрутки текста */
 }
 
@@ -64,15 +64,15 @@ body {
     }
 
     .image {
-        display: none; /* Скрываем изображение на мобильных */
+        display: none !important; /* Скрываем изображение на мобильных */
     }
 
     .text {
-        width: 100%; /* Изменяем ширину на 100% для мобильных */
+        width: 100% !important; /* Изменяем ширину на 100% для мобильных */
         padding: 20px; /* Уменьшаем отступы для мобильных */
-        height: 100vh; /* Задаем 100% высоты экрана */
-        justify-content: flex-start; /* Выравниваем текст сверху */
-        overflow: auto; /* Добавлено для прокрутки текста */
+        height: auto !important; /* Задаем автоматическую высоту */
+        justify-content: flex-start !important; /* Выравниваем текст сверху */
+        overflow: auto !important; /* Добавлено для прокрутки текста */
     }
 }
 
