@@ -37,11 +37,17 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     margin: 0;
+    transition: margin-top 0.3s ease; /* Анимация смещения */
 }
 
 .site-title:hover {
     color: #ff6600;
     text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+/* При открытии бургера сдвигаем заголовок */
+.site-title.burger-open {
+    margin-top: 50px;
 }
 
 /* Иконка бургера */
@@ -99,15 +105,15 @@ body {
 
     .nav-menu {
         display: none;
-        flex-direction: column;  /* Вертикальное расположение пунктов */
+        flex-direction: column; /* Вертикальное расположение пунктов */
         align-items: center;
         width: 100%;
-        background-color: transparent; /* Убираем белый фон */
+        background-color: rgba(255, 255, 255, 0.9); /* Лёгкий фон */
         position: absolute;
         top: 70px;
         left: 0;
-        padding: 20px 0;  /* Убираем лишний отступ */
-        box-shadow: none; /* Убираем тень */
+        padding: 20px 0;
+        box-shadow: none;
     }
 
     .burger-menu {
@@ -116,6 +122,8 @@ body {
 
     .nav-menu.active {
         display: flex;
+        align-items: center; /* Центрируем */
+        justify-content: center;
     }
 
     .nav-menu ul {
@@ -128,11 +136,16 @@ body {
 
     .nav-menu ul li a {
         font-size: 24px;
-        margin: 0;  /* Убираем отступы */
+        margin: 0; /* Убираем отступы */
+    }
+
+    /* Сдвигаем иконки вниз при открытии меню */
+    .nav-menu.active + .social-icons {
+        margin-top: 50px;
     }
 
     .social-icons {
-        margin-top: 15px; /* Сдвигаем иконки вниз на мобильных устройствах */
+        margin-top: 15px; /* Отступ для иконок */
     }
 }
 
