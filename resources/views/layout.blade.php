@@ -7,18 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/styleHeader.css') }}">
+    <link rel="stylesheet" href="{{ asset ('js/burger-menu.js') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body>
 
-
-
-
-
 <header class="header">
     <div class="container">
         <h1><a href="/" class="site-title">TrvlIlch</a></h1>
-        <nav class="nav-menu">
+
+        <!-- Иконка бургера для мобильных устройств -->
+        <div class="burger-menu" id="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+
+        <!-- Меню навигации -->
+        <nav class="nav-menu" id="nav-menu">
             <ul>
                 <li><a href="{{ route('home') }}" class="{{ Route::is('home') ? 'active' : '' }}">Главная</a></li>
                 <li><a href="{{ route('travel') }}" class="{{ Route::is('travel') ? 'active' : '' }}">Путешествия</a></li>
@@ -26,6 +32,7 @@
                 <li><a href="{{ route('about') }}" class="{{ Route::is('about') ? 'active' : '' }}">О нас</a></li>
             </ul>
         </nav>
+
         <div class="social-icons">
             <a href="https://t.me/+dGf_uOoEqDMzNTIy" target="_blank">
                 <img src="/images/телеграм.svg" alt="Telegram">
@@ -39,6 +46,7 @@
         </div>
     </div>
 </header>
+
 
 
 

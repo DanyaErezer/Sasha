@@ -18,6 +18,7 @@ body {
     border-radius: 5px;
 }
 
+/* Шапка */
 .header {
     padding: 15px 0;
 }
@@ -43,8 +44,24 @@ body {
     text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
 }
 
+/* Иконка бургера */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger-line {
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* Навигационное меню */
 .nav-menu {
-    flex-grow: 1; /* Позволяет меню центрироваться */
     display: flex;
     justify-content: center;
 }
@@ -69,6 +86,7 @@ body {
     color: #ff6600;
 }
 
+/* Стили для социальных иконок */
 .social-icons {
     display: flex; /* Flexbox для выравнивания иконок */
     gap: 10px; /* Расстояние между иконками */
@@ -85,7 +103,7 @@ body {
     transform: scale(1.2);
 }
 
-/* Медиа-запросы для мобильных устройств */
+/* Стили для мобильных устройств */
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Вертикальное расположение элементов */
@@ -97,22 +115,29 @@ body {
     }
 
     .nav-menu {
-        justify-content: center; /* Центрируем меню */
+        display: none; /* Скрываем меню на мобильных устройствах */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .nav-menu ul {
-        flex-direction: column; /* Вертикальное расположение меню */
-        gap: 15px; /* Уменьшаем расстояние между кнопками */
-        align-items: center; /* Центрируем кнопки */
+    .burger-menu {
+        display: flex; /* Показываем иконку бургера на мобильных устройствах */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Показываем меню, когда оно активно */
     }
 
     .nav-menu ul li a {
-        font-size: 24px; /* Уменьшаем размер шрифта для ссылок */
-    }
-
-    .social-icons img {
-        width: 36px; /* Уменьшаем размер иконок */
-        height: 36px;
+        font-size: 24px;
+        margin-bottom: 15px;
     }
 }
 
@@ -123,5 +148,10 @@ body {
 
     .nav-menu ul li a {
         font-size: 20px; /* Уменьшаем размер шрифта для ссылок */
+    }
+
+    .social-icons img {
+        width: 36px; /* Уменьшаем размер иконок */
+        height: 36px;
     }
 }
