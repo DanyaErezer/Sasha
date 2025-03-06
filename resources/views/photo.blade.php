@@ -21,7 +21,7 @@
                      class="img-fluid rounded gallery-img" alt="Фото 19">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/photo/Foto2.jpg') }}"
+                <img src="{{ asset('images/photo/Foto1.jpg') }}"
                      class="img-fluid rounded gallery-img" alt="Фото 1">
             </div>
 

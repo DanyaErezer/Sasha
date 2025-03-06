@@ -54,5 +54,12 @@
 
 
 @include('footer')
+<script>
+    document.getElementById('burger-menu').addEventListener('click', function() {
+        const navMenu = document.getElementById('nav-menu');
+        navMenu.classList.toggle('active');
+    });
+</script>
+
 </body>
 </html>
