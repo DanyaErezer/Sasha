@@ -13,7 +13,7 @@
 
 <header class="header">
     <div class="container">
-        <h1><a href="/" class="site-title">TrvlIlch</a></h1>
+        <h1><a href="/" class="site-title" id="site-title">TrvlIlch</a></h1>
 
         <!-- Иконка бургера для мобильных устройств -->
         <div class="burger-menu" id="burger-menu">
