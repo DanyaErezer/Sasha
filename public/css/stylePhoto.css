@@ -1,5 +1,22 @@
-/* Стиль для галереи */
+/* Стили для бургер-меню */
+.nav-menu {
+    display: none; /* Скрываем меню по умолчанию */
+    position: absolute; /* Позиционируем абсолютно */
+    top: 70px; /* Отступ сверху */
+    left: 0; /* Прижимаем к левому краю */
+    width: 100%; /* Занимает всю ширину */
 
+    z-index: 1000; /* Меню поверх других элементов */
+    padding: 20px 0; /* Отступы внутри меню */
+}
+
+/* Стили для карусели */
+.carousel {
+    position: relative;
+    z-index: 1; /* Карусель должна быть ниже меню */
+}
+
+/* Стили для галереи (карусели) */
 .carousel,
 .carousel-inner,
 .carousel-item {
@@ -9,22 +26,65 @@
 .carousel-item img {
     display: block;
     margin: auto; /* Центрируем */
-    height: 850px;
-    width: auto; /* Чтобы изображение сохраняло пропорции */
-    max-width: 100%; /* Не выходило за границы */
+    height: auto; /* Высота будет адаптироваться */
+    width: 100%; /* Занимает всю ширину контейнера */
+    max-width: 100%; /* Не выходит за границы */
     object-fit: contain; /* Вписывает фото без обрезки */
 }
 
+/* Стили для кнопок "назад" и "вперед" */
 .carousel-control-next {
     width: 10%; /* Уменьшаем ширину кликабельной зоны */
-    right: 20%;
+    right: 5%; /* Сдвигаем ближе к краю */
 }
+
 .carousel-control-prev {
     width: 10%; /* Уменьшаем ширину кликабельной зоны */
-    left: 20%;
+    left: 5%; /* Сдвигаем ближе к краю */
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 60px;
-    height: 60px; /* Делаем иконки меньше */
+    width: 40px; /* Уменьшаем размер иконок */
+    height: 40px;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: auto; /* Высота адаптируется под ширину */
+        max-height: 80vh; /* Ограничиваем максимальную высоту */
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 15%; /* Увеличиваем кликабельную зону для мобильных */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px; /* Уменьшаем размер иконок для мобильных */
+        height: 30px;
+    }
+
+    /* Убедимся, что меню всегда поверх карусели */
+    .nav-menu {
+        z-index: 1000;
+    }
+
+    .carousel {
+        z-index: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item img {
+        max-height: 70vh; /* Еще больше ограничиваем высоту */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px; /* Минимальный размер иконок */
+        height: 20px;
+    }
 }
