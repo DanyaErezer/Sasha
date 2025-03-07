@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('#nav-menu a').forEach(function (link) {
         link.addEventListener('click', function (event) {
             event.stopPropagation(); // Останавливаем всплытие
-            // Закрываем меню после клика на ссылку (опционально)
+            // Закрываем меню после клика на ссылку
             navMenu.classList.remove('active');
             siteTitle.classList.remove('burger-open');
         });
