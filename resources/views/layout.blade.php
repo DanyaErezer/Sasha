@@ -48,12 +48,12 @@
 
 
 
-
+<script src="{{ asset ('js/burger-menu.js') }}"></script>
 @yield('main_content')
 
 
 @include('footer')
 
-<script src="{{ asset ('js/burger-menu.js') }}"></script>
+
 </body>
 </html>
