@@ -19,7 +19,7 @@
                 <p>{!! ($post->post_content) !!}</p>
             </div>
         @endforeach
-        <a href="https://t.me/+dGf_uOoEqDMzNTIy" target="_blank" rel="noopener noreferrer" class="btn">Забронировать</a>
+        <a href="https://t.me/ilch_sas" target="_blank" rel="noopener noreferrer" class="btn">Забронировать</a>
     </div>
 </div>
 

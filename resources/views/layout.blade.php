@@ -33,7 +33,7 @@
         </nav>
 
         <div class="social-icons">
-            <a href="https://t.me/+dGf_uOoEqDMzNTIy" target="_blank">
+            <a href="https://t.me/ilch_sas" target="_blank">
                 <img src="/images/телеграм.svg" alt="Telegram">
             </a>
             <a href="https://vk.com/club229293452" target="_blank">
